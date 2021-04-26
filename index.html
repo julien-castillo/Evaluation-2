@@ -20,15 +20,17 @@
 
 <!-- Player 1 panel -->
 <div class="wrapper clearfix">
+<!-- Badges Bootstrap -->
   <div class="badge-player1">
     <button type="button" class="btn btn-success">Win(s) : <span class="badge bg-success">0</span></button>
     <button type="button" class="btn btn-danger">Defeat(s) : <span class="badge bg-danger">0</span></button>
   </div>
+<!-- End of Badges Bootstrap -->
   <div class="player-0-panel active">
     <div class="player-name" id="name-0">Player 1</div>
     <div class="player-score" id="score-0">43</div>
 
-<!-- Progress Bar Player 1-->
+<!-- Progress Bar Player 1 -->
     <div class="container1">
       <div class="loading1">
         <div class="loadingActive1"></div>
@@ -38,7 +40,7 @@
         </div>
       </div>
     </div>
-    <!-- End of Progress Bar-->
+<!-- End of Progress Bar -->
 
     <div class="player-current-box">
       <div class="player-current-label">Current</div>
@@ -49,10 +51,12 @@
 
 <!-- Player 2 panel -->
   <div class="player-1-panel">
+<!-- Badges Bootstrap -->
     <div class="badge-player2">
       <button type="button" class="btn btn-success">Win(s) : <span class="badge bg-success">0</span></button>
       <button type="button" class="btn btn-danger">Defeat(s) : <span class="badge bg-danger">0</span></button>
     </div>
+<!-- End of Badges Bootstrap -->
     <div class="player-name" id="name-1">Player 2</div>
     <div class="player-score" id="score-1">72</div>
 
@@ -76,28 +80,21 @@
 <!-- End of player 2 panel -->
 
 <!-- Buttons -->
-  <a href="#modal"><button class="btn-new">
-    <i class="fas fa-plus-square fa-2x"></i>New game</button></a>
+  <a href="#modal"><button class="btn-new"><i class="fas fa-plus-square fa-2x"></i>New game</button></a>
+
   <button class="btn-roll"><i class="fas fa-sync fa-2x"></i>Roll dice</button>
 
-  <button class="btn-hold"><i
-          class="far fa-arrow-alt-circle-down fa-2x"></i>Hold</button>
+  <button class="btn-hold"><i class="far fa-arrow-alt-circle-down fa-2x"></i>Hold</button>
 
-  <a href="#modal-rules"><button class="btn-rules-uk"><i
-          class="fas fa-dice"></i>Rules
-    <img class="uk" src="assets/img/uk.png" alt="UK Flag"></button></a>
+  <a href="#modal-rules"><button class="btn-rules-uk"><i class="fas fa-dice"></i>
+    Rules<img class="uk" src="assets/img/uk.png" alt="UK Flag"></button></a>
 
-  <a href="#modal-regles"><button class="btn-rules-fr"><i
-          class="fas fa-dice"></i>Règles<img
-          class="fr" src="assets/img/fr.png"
-          alt="Drapeau Français"></button></a>
+  <a href="#modal-regles"><button class="btn-rules-fr"><i class="fas fa-dice"></i>
+    Règles<img class="fr" src="assets/img/fr.png" alt="Drapeau Français"></button></a>
 
-  <button id="mute" class="btn-volume-mute">
-    <i class="fas fa-volume-mute fa-2x"></i>Sound Off
-  </button>
-  <button id="unMute" class="btn-volume">
-    <i class="fas fa-volume-up fa-2x"></i>Sound On
-  </button>
+  <button id="mute" class="btn-volume-mute"><i class="fas fa-volume-mute fa-2x"></i>Sound Off</button>
+
+  <button id="unMute" class="btn-volume"><i class="fas fa-volume-up fa-2x"></i>Sound On</button>
 
 <!-- Dice images -->
   <img src="assets/img/dice-5.png" alt="Dice" class="dice" id="dice1">
@@ -108,7 +105,7 @@
 <div id="modal" class="modal">
   <div class="modal_content">
     <h1>Start a new game</h1>
-    <p>Please choice the players' name</p>
+    <p>Please choose the players' name</p>
     <p>(4 to 8 characters)</p>
     <br />
     <form action="?">
