@@ -180,7 +180,7 @@ button:focus {
 
 /*Bootstrap*/
 .badge-player1 .btn-success {
-    left:70px;
+    left:60px;
     top: 10px;
 
 }
@@ -190,12 +190,12 @@ button:focus {
 }
 
 .badge-player2 .btn-success {
-    left: 930px;
+    left: 938px;
     top: 10px;
 
 }
 .badge-player2 .btn-danger {
-    left:930px;
+    left:928px;
     top: 60px;
 }
 
@@ -234,5 +234,5 @@ img {
 }
 
 .uk {
-    margin-bottom: 5px;
+    margin: 0 0 5px 5px;
 }
