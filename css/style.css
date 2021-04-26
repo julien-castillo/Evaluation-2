@@ -1,0 +1,238 @@
+/***********/
+/* GENERAL */
+/***********/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, #22e4e3, #222222, #4a0071);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+li {
+    color: #000;
+}
+h4 {
+    text-align: center;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Icon */
+.fa-arrow-alt-circle-down, .fa-sync, .fa-plus-square, .fa-dice, .fa-book-reader, .fa-volume-mute, .fa-volume-up {
+    color: #15ceba;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.fa-book-reader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Panels */
+.player-0-panel,
+.player-1-panel {
+    font-family: Poppins, sans-serif;
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 10px;
+}
+
+/***********/
+/* PLAYERS */
+/***********/
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #15ceba;
+    margin-bottom: 0;
+}
+
+.active {
+    background-color: rgba(21, 206, 186, 0.1);
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #15ceba;
+    top: -40px;
+    left: 50%;
+}
+
+.player-current-box {
+    background-color: #15ceba;
+    color: #fff;
+    width: 40%;
+    padding: 12px;
+    margin: 100px auto 0;
+    text-align: center;
+    border: solid 2px #000;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+/* Buttons */
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: "Poppins", sans-serif;;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 0;
+}
+
+button:hover {
+    font-weight: 600;
+}
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.rules {
+    margin: 0;
+}
+
+/* Specific buttons */
+.btn-new { top: 45px; font-family: "Poppins", sans-serif;}
+.btn-roll { top: 403px; font-family: "Poppins", sans-serif;}
+.btn-hold { top: 467px; font-family: "Poppins", sans-serif;}
+.btn-rules-uk { left: 240px; top: 530px; font-family: "Poppins", sans-serif;}
+.btn-rules-fr { left: 750px; top: 530px; font-family: "Poppins", sans-serif;}
+.btn-volume-mute { top: 550px; font-family: "Poppins", sans-serif;}
+.btn-volume { top: 550px; font-family: "Poppins", sans-serif;}
+
+/*Bootstrap*/
+.badge-player1 .btn-success {
+    left:70px;
+    top: 10px;
+
+}
+.badge-player1 .btn-danger {
+    left:70px;
+    top: 60px;
+}
+
+.badge-player2 .btn-success {
+    left: 930px;
+    top: 10px;
+
+}
+.badge-player2 .btn-danger {
+    left:930px;
+    top: 60px;
+}
+
+/* Dice images */
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#dice1 { top: 120px; }
+#dice2 { top: 250px; }
+
+/* Winner status */
+.winner {
+    background-color: rgba(21, 206, 186, 0.5);
+}
+
+.winner .player-name {
+    font-weight: 500; color: #ff0000;
+}
+
+/*Images*/
+img {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    transition: margin 0.3s;
+}
+
+.fr {
+    margin: 0 0 5px 8px;
+}
+
+.uk {
+    margin-bottom: 5px;
+}
