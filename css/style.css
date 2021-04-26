@@ -180,23 +180,26 @@ button:focus {
 
 /*Bootstrap*/
 .badge-player1 .btn-success {
-    left:60px;
+    left:66px;
     top: 10px;
+    width: 126px;
 
 }
 .badge-player1 .btn-danger {
-    left:70px;
+    left:72px;
     top: 60px;
+    width: 140px;
 }
 
 .badge-player2 .btn-success {
-    left: 938px;
+    left: 932px;
     top: 10px;
-
+    width: 126px;
 }
 .badge-player2 .btn-danger {
-    left:928px;
+    left:926px;
     top: 60px;
+    width: 140px;
 }
 
 /* Dice images */
